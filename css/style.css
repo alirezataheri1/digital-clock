@@ -1,0 +1,61 @@
+:root {
+  --body: #fff;
+  --bodyBack: #0e0d22;
+  --clockBack: #3a33de;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 100vh;
+  background: var(--bodyBack);
+  color: var(--body);
+}
+
+.date-time-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  background-color: var(--clockBack);
+  box-shadow: 0 0 15px var(--clockBack);
+  height: 15rem;
+  width: 30rem;
+  border-radius: 0.5rem;
+
+  transition: 0.3s;
+}
+
+.date {
+  flex-basis: 35%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 0.8rem;
+
+  font-size: 2rem;
+}
+
+.time {
+  flex-basis: 65%;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.7rem;
+
+  padding-top: 1rem;
+  font-size: 4.5rem;
+}
+
+.time__before-after-noon {
+  font-size: 2.5rem;
+  margin-left: 1rem;
+}
+
